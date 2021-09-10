@@ -23,5 +23,8 @@ export class UserService {
   updateUser(id: string, request: RequestObjectUpdateUser): Observable<ResponseObjectUpdateUser> {
     return this.http.put<ResponseObjectUpdateUser>(`${this.path}/${id}`, request);
   }
+  deleteUser(id: string):Observable<any>{
+    return this.http.delete<any>(`${this.path}/${id}`);
+  }
 
 }

@@ -1,0 +1,17 @@
+<div  *ngIf="!data.remove">
+    <h1 mat-dialog-title>Deletar o usuário {{data.name}}</h1>
+    <div mat-dialog-content>
+      <p>Essa operação é irreversível! Deseja continuar?</p>  
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button  (click)="onNoClick()">Voltar</button>
+      <button mat-button (click)="deleteUser(data.id)" cdkFocusInitial>Continuar</button>
+    </div>
+</div>
+<div  *ngIf="data.remove === true">
+    <h1 mat-dialog-title >Usuario deletado com sucesso</h1>
+
+    <div mat-dialog-actions class="back">
+        <button mat-button  (click)="onNoClick()">Voltar</button>
+    </div>
+</div>

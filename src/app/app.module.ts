@@ -18,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 import { EditComponent } from './users/edit/edit.component';
+import { DeleteComponent } from './users/delete/delete.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { EditComponent } from './users/edit/edit.component';
     AppComponent,
     UsersComponent,
     CreateComponent,
-    EditComponent
+    EditComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,
