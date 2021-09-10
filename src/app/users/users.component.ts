@@ -18,12 +18,14 @@ export class UsersComponent implements OnInit {
     const apiData = this.userService.getUsers(0);
 
     apiData.subscribe((res) => {
-      console.log(res)
       this.responseObjectUsers = res;
       this.responseObjectUsers.data = res ? res.data.map((elem: any) => {
         return { ...elem, nome: `${elem.first_name} ${elem.last_name}` };
       }) : []
     })
+  }
+  createUserNavigation(){
+    this.router.navigateByUrl('users/create');
   }
 
 }

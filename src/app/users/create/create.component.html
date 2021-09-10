@@ -1,0 +1,26 @@
+
+<form class="form" [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+        <div class="div-input"> 
+            <label for="name" class="label">
+            Nome
+            </label>
+            <input id="name" type="text" formControlName="name" placeholder="Insira seu nome">
+        </div>
+
+        <div class="div-input"  >
+            <label class="label" for="job">
+            Profissão
+            </label>
+            <input id="job" type="text" formControlName="job" placeholder="Insira sua profissão">
+        </div>
+        <div class="div-button"> 
+            <button mat-raised-button  (click)="goBack()" >Voltar</button>
+            <button mat-raised-button color="primary"  type="submit">Cadastrar</button>
+        </div>
+        
+    </div>
+</form>
+      
+
+

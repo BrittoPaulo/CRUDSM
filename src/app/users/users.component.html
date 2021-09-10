@@ -1,7 +1,7 @@
 <div class="container">
     <div class="header">
         <h1>Usuários</h1>
-        <button mat-raised-button color="primary" >Adicionar Usuários</button>
+        <button mat-raised-button color="primary" (click)="createUserNavigation()">Adicionar Usuários</button>
     </div>
     <table mat-table [dataSource]="responseObjectUsers.data">
         <ng-container matColumnDef="id">

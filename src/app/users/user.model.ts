@@ -12,3 +12,13 @@ export interface ResponseObjectUsers {
     total_pages: number;
     data: User[];
 }
+export interface RequestObjectCreate {
+    name: string;
+    job: string;
+}
+export interface ResponseObjectCreate {
+    name: string;
+    job: string;
+    id: string;
+    createdAt: Date;
+}
