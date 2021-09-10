@@ -1,4 +1,4 @@
-# CRUD User AngularJS Frameworks and API https://reqres.in/
+# CRUD using  AngularJS Frameworks and API https://reqres.in/
 This project aims to build a CRUD using the Rest API with false data, developed in JS language with AngularJS framework.
 due to the fact that the API data is fake, some actions will not update the data. Ex: Delete, Update and Create.
 ## Get started
