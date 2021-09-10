@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ResponseObjectUsers } from './user.model';
-import { UserService } from './user.service';
-
+import { UserService } from './user.service'
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
@@ -24,8 +22,11 @@ export class UsersComponent implements OnInit {
       }) : []
     })
   }
-  createUserNavigation(){
+  createUserNavigation() {
     this.router.navigateByUrl('users/create');
+  }
+  editUser(id:Number){
+    this.router.navigateByUrl(`users/edit/${id}`)
   }
 
 }
